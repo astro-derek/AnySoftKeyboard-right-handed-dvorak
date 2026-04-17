@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"    >
+
+    <!-- Right-Handed (One-Handed) Dvorak layout.
+         Top and bottom rows are swapped vs. standard Dvorak so that the
+         symbol/common-consonant row is easily reachable at the bottom. -->
+
+    <!-- Top row: rare consonants (was bottom row in standard Dvorak) -->
+    <Row>
+        <Key android:codes="59,58"  android:keyLabel="" android:keyEdgeFlags="left" android:popupCharacters="1"/>
+        <Key android:codes="113" android:keyLabel="q" android:popupCharacters="2β"/>
+        <Key android:codes="106" android:keyLabel="j" android:popupCharacters="3ĵ"/>
+        <Key android:codes="107" android:keyLabel="k" android:popupCharacters="4κ"/>
+        <Key android:codes="120" android:keyLabel="x" android:popupCharacters="5ξχ"/>
+        <Key android:codes="98"  android:keyLabel="b" android:popupCharacters="6β"/>
+        <Key android:codes="109" android:keyLabel="m" android:popupCharacters="7μ"/>
+        <Key android:codes="119" android:keyLabel="w" android:popupCharacters="8ŵω"/>
+        <Key android:codes="118" android:keyLabel="v" android:popupCharacters="9"/>
+        <Key android:codes="122" android:keyLabel="z" android:popupCharacters="0żžźζ" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <!-- Home row: vowels on left, common consonants on right (same as standard Dvorak) -->
+    <Row>
+        <Key android:codes="97" android:keyLabel="a" android:popupCharacters="ª" android:keyEdgeFlags="left"/>
+        <Key android:codes="111" android:keyLabel="o" android:popupCharacters="òóôõöøőœōoº"/>
+        <Key android:codes="101" android:keyLabel="e" android:popupCharacters="èéêëęē€"/>
+        <Key android:codes="117" android:keyLabel="u" android:popupCharacters="ùúûüŭűū"/>
+        <Key android:codes="105" android:keyLabel="i" android:popupCharacters="ìíîïīι*"/>
+        <Key android:codes="100" android:keyLabel="d" android:popupCharacters="đďδ"/>
+        <Key android:codes="104" android:keyLabel="h" android:popupCharacters="ĥθ"/>
+        <Key android:codes="116" android:keyLabel="t" android:popupCharacters="țť\u0163τ"/>
+        <Key android:codes="110" android:keyLabel="n" android:popupCharacters="ñńν"/>
+        <Key android:codes="115" android:keyLabel="s" android:popupCharacters="ßśŝšșσ" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <!-- Bottom row: symbols and common consonants (was top row in standard Dvorak).
+         12 keys total (shift + 10 chars + backspace), so keyWidth = 100/12 ≈ 8.33%p -->
+    <Row android:keyWidth="8.33%p">
+        <Key android:codes="-1"
+                android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="39,34"  android:keyLabel="" android:popupCharacters="ʾʿʻ"/>
+        <Key android:codes="44,60"  android:keyLabel="" android:popupCharacters="«"/>
+        <Key android:codes="46,62"  android:keyLabel="" android:popupCharacters="»"/>
+        <Key android:codes="112" android:keyLabel="p" android:popupCharacters="π"/>
+        <Key android:codes="121" android:keyLabel="y" android:popupCharacters="ýÿψ"/>
+        <Key android:codes="102" android:keyLabel="f" android:popupCharacters="ϕ"/>
+        <Key android:codes="103" android:keyLabel="g" android:popupCharacters="ĝ"/>
+        <Key android:codes="99"  android:keyLabel="c" android:popupCharacters="çćĉčγ"/>
+        <Key android:codes="114" android:keyLabel="r" android:popupCharacters="řŕρ"/>
+        <Key android:codes="108" android:keyLabel="l" android:popupCharacters="ľĺłλ" android:keyEdgeFlags="right"/>
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    </Row>
+</Keyboard>
